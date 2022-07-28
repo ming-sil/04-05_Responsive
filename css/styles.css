@@ -1,0 +1,152 @@
+
+@import url(reset.css);
+
+header,section{
+    background-color: lightgrey;
+}
+
+header,.section_1{
+    padding: 0 200px;
+}
+@media screen and (max-width:500px) {
+    header,.section_1{
+        padding: 0 20px;
+    }    
+}
+
+.section_2{
+    padding: 150px 200px;
+}
+@media screen and (max-width:500px) {
+    .section_2{
+        padding: 100px 20px;
+    }    
+}
+/* common end */
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    /* letter-spacing: -2px;
+    =>글자 자간 조절(리셋css에 보통 작업) */
+}
+
+.menu_wrap{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+}
+@media screen and (max-width:500px) {
+    .menu_wrap{
+        display: none;
+    }
+}
+
+.mo_menu{
+    font-size: 40px;
+    font-weight: 900;
+    display: none;
+}
+@media screen and (max-width:500px) {
+    .mo_menu{
+        display: block;
+    }
+}
+/* header end */
+
+.section_1{
+    height: 80vh;
+}
+
+.section_1 h3{
+    font-size: 70px;
+    font-weight: 700;
+    padding-top: 150px;
+    line-height: 85px;
+    margin-bottom: 25px;
+}
+
+.section_1 p{
+    width: 600px;
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0.7;
+    /* =>불투명도 조절
+    =>0~1범위로 사용가능 */
+}
+@media screen and (max-width:500px) {
+    .section_1 h3{
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .section_1 p{
+        width: 100%;
+        font-size: 15px;
+    }
+}
+/* section_1 end */
+
+.section_2 h3{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.con_wrap_2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.con_2{
+    /* width: 450px; */
+    width: 29.94011%;
+}
+/* *px->퍼센트 계산공식
+=>변경할 값 / 상위부모 값 * 100 */
+
+@media screen and (max-width:500px) {
+   .con_wrap_2{
+       display: block;
+   }
+
+   .con_2{
+       width: 100%;
+       margin-bottom: 30px;
+   }
+}
+
+/* .bg{
+    height: 300px;
+    background-image: url(https://6.viki.io/image/a8b2d7452de54232bde184a49cf5a720.jpeg?s=900x600&e=t);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+=>배경 이미지로 반응형 작업을 하면 높이값이 고정이기 때문에 
+기획 의도에 맞다면 사용하고 아니면 이미지태그를 사용할 것 */
+
+.con_2 h3{
+    font-size: 24px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.con_2 p{
+    opacity: 0.6;
+}
+/* section_2 end */
+
+footer{
+    height: 150px;
+}
